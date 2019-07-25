@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/cardview_light_background">
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/buttonPanel"
+                android:onClick="back"
+                android:clickable="true"
+                android:drawableRight="@android:drawable/ic_delete"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="60dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/postinfo"
+                android:layout_alignParentTop="true"
+                android:background="@color/cardview_light_background"/>
+            <Button
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="names"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:background="@color/colorAccent"
+            android:clickable="true"
+            android:onClick="dialog" />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/lv"/>
+
+
+</RelativeLayout>

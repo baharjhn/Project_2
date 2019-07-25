@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/cardview_dark_background">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="prj2"
+            android:background="@color/cardview_light_background"
+            android:layout_alignParentLeft="true"/>
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="names"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="70dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:background="@color/colorAccent"
+            android:clickable="true"
+            android:onClick="dialog"
+             />
+
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:clickable="true"
+            android:onClick="changeview"
+            android:drawableTop="@android:drawable/arrow_down_float"/>
+    </RelativeLayout>
+
+
+    <ViewSwitcher
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/viewswitch"
+         tools:ignore="InvalidId">
+         <ListView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="50dp"
+             android:id= "@+id/my_list" />
+
+         <GridView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="50dp"
+             android:gravity="center"
+             android:columnWidth="100dp"
+             android:numColumns="auto_fit"
+             android:verticalSpacing="40dp"
+             android:horizontalSpacing="20dp"
+             android:stretchMode="spacingWidthUniform"
+             android:id="@+id/my_grid" />
+
+     </ViewSwitcher>
+
+
+
+</RelativeLayout>

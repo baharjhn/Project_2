@@ -43,10 +43,4 @@ Note: the comment cache is reset each time the app starts.
 
 ## Team
 
-Bahar Jahani, Amirreza Kazemi and Preni Golazizian.
-
-## Changes before publishing
-
-- Fixed a crash on first launch: the app dropped the comment table before it existed.
-- Switched SQL queries to parameterized queries, so comments with quotes or apostrophes are cached correctly.
-- Removed Android Studio project files from version control.
+Bahar Jahani, Amirreza Kazemi.
